@@ -2,18 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 
 body {
     font-family: Arial, sans-serif;
     background-color: #e5e5e5;
-}
-
-.main-nav {
-    background-color: #2f2f2f;
-    margin-top: 0;          /* ensure no gap */
-    margin-bottom: 6rem;
 }
 
 /* ---------- HEADER ---------- */
@@ -22,30 +15,35 @@ body {
     color: white;
     text-align: center;
     padding: 20px;
-    font-size: 1.2rem;
     border-radius: 3px;
 }
 
-nav {
-    background-color: #2f2f2f;
+#course-title {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
-nav ul {
+.main-nav ul {
     list-style: none;
     display: flex;
-   
+    justify-content: center;
 }
 
-nav li {
-    flex: 1;
-    text-align: center;
+.main-nav li {
+    margin: 0 10px;
 }
 
-nav a {
-    display: block;
-    padding: 14px;
+.main-nav a {
     color: white;
     text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+.main-nav a:hover {
+    background-color: #145374;
+    border-radius: 5px;
 }
 
 /* ---------- MAIN ---------- */
@@ -72,14 +70,17 @@ main {
     background-color: white;
     border: 1px solid #bbb;
     border-radius: 5px;
+    padding: 15px;
 }
 
 /* Card headers */
-.card-header {
+.about-top, .skills-top {
     background-color: #1f4d6b;
     color: white;
     padding: 12px;
     font-weight: bold;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
 }
 
 /* Card body */
@@ -88,24 +89,31 @@ main {
 }
 
 .about-me{
-    border-radius: 12px;
-    padding: 20px;
-    background-color: #ffffff70;
     box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-    margin:0;
 }
 
-/* About Me top section */
-.about-top {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 15px;
-    margin-bottom: 20px ;
-    margin-top: 0;
-    background-color: #1f4d6b;
-    margin: -20px -20px 20px -20px;  /* ⬅ key line */
-    padding: 15px 20px;
-    
+.skills{
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.skills ul{
+    list-style: none;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.skills li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.skills a {
+    color: #1f4d6b;
+    text-decoration: none;
+}
+
+.skills a:hover {
+    text-decoration: underline;
 }
 
 /* Country section */
@@ -126,37 +134,6 @@ main {
     border: 1px solid #ccc;
 }
 
-/* ---------- ASIDE ---------- */
-.skills {
-    list-style: disc;
-    padding: 20px 20px 20px 20px;
-    border-radius: 12px;
-    background-color: #ffffff70;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-}
-
-.skills-top{
-    display: grid;
-    margin-bottom: 20px ;
-    margin-top: 0;
-    background-color: #1f4d6b;
-    padding: 20px 20px 20px 20px;  /* ⬅ key line */
-    padding: 15px 20px;
-    border-radius: 12px 12px 0 0;
-}
-
-.skills ul{
-
-    list-style: none;
-    margin: 0;
-    padding: 20px 0 0 0;
-    text-align: center;
-}
-
-.skills li {
-    margin-bottom: 10px;
-    font-size: 1rem;
-}
 /* ---------- FOOTER ---------- */
 footer {
     background-color: #1f4d6b;

@@ -3,24 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <title>WDD131 Final</title>
+    <meta name="description" content="Final project for WDD 131: Dynamic Web Fundamentals. Showcasing web development skills and projects by Adafa Ralph.">
+    <meta name="author" content="Adafa Ralph">
+    <link rel="stylesheet" href="styles/base.css">
+    <title>WDD 131: Dynamic Web Fundamentals — Adafa Ralph</title>
 </head>
 <body>
 
 <header class="header-title">
-    <p>WDD131: Dynamic Web Fundamentals</p>
-   
+    <span id="course-title">WDD 131: Dynamic Web Fundamentals</span>
+    
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">I-Learn</a></li>
+            <li><a href="#">Scripture</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
 </header>
-
-<nav class="main-nav">
-    <ul>
-        <li><a href="#">LinkedIn</a></li>
-        <li><a href="#">I-Learn</a></li>
-        <li><a href="#">Scripture</a></li>
-        <li><a href="#">Final Project</a></li>
-    </ul>
-</nav>
 
 <main>
     
@@ -31,30 +32,30 @@
     <section class="content-grid">
 
         <!-- LEFT COLUMN -->
-        <div class="about-me">
+        <section class="card about-me">
             <h2 class="about-top">About Me</h2>
 
             <div class="intro">
                 <p>
                     I am a software engineer at the Caribbean Digital Transformation Project (CARDTP), where I develop full-stack web applications that streamline workflows across government departments. I specialize in building clean, maintainable code with a focus on user-friendly interfaces and efficient backend APIs.
 
-Passionate about problem-solving and emerging technologies, I continuously refine my skills to deliver reliable, modern digital solutions that make an impact.
+                    Passionate about problem-solving and emerging technologies, I continuously refine my skills to deliver reliable, modern digital solutions that make an impact.
                 </p>
             </div>
 
             <div class="country">
-                <h3>St Vincent and the Grenadines</h3>
-                <img src="temp" alt="Flag" style="width:150px;">
+                <h3>Saint Vincent and the Grenadines</h3>
+                <img src="images/flag.png" alt="Flag of Saint Vincent and the Grenadines">
                 <p><em>Official Flag of Saint Vincent and the Grenadines</em></p>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam tempora voluptas nemo voluptatum.
                 </p>
             </div>
-        </div>
+        </section>
 
         <!-- RIGHT COLUMN -->
-        <div class="skills">
-            <h1 class="skills-top">Web Dev Resources</h1>
+        <section class="card skills">
+            <h2 class="skills-top">Web Dev Resources</h2>
             <ul class="skills-text">
                 <li><a href="https://dev.to" target="_blank" rel="noopener">Dev.to Community</a></li>
                 <li><a href="https://www.smashingmagazine.com/" target="_blank" rel="noopener">Smashing Magazine</a></li>
@@ -63,14 +64,14 @@ Passionate about problem-solving and emerging technologies, I continuously refin
                 <li><a href="https://www.udemy.com/" target="_blank" rel="noopener">Udemy</a></li>
                 <li><a href="https://picsum.photos/" target="_blank" rel="noopener">Lorem Picsum</a></li>
             </ul>
-        </div>
+        </section>
 
     </section>
 
 </main>
 
 <footer>
-    <p>© 2025 Adafa Ralph • Saint Vincent and the Grenadines</p>
+    <p><span>© 2025 Adafa Ralph • Saint Vincent and the Grenadines</span></p>
     <p>Last Modification</p>
 </footer>
 
