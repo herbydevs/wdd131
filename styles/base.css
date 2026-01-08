@@ -5,11 +5,18 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     background-color: #e5e5e5;
+    color: #000;
 }
 
+
 /* ---------- HEADER ---------- */
+header {
+    display: block; /* or flex if you want horizontal layout */
+    width: 100%;
+}
+
 .header-title {
     background-color: #1f4d6b;
     color: white;
