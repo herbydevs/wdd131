@@ -8,20 +8,22 @@
 </head>
 <body>
 
-<header>
+<header class="header-title">
     <p>WDD131: Dynamic Web Fundamentals</p>
-    <nav>
-        <ul>
-            <li><a href="#">LinkedIn</a></li>
-            <li><a href="#">I-Learn</a></li>
-            <li><a href="#">Scripture</a></li>
-            <li><a href="#">Final Project</a></li>
-        </ul>
-    </nav>
+   
 </header>
 
-<main>
+<nav class="main-nav">
+    <ul>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">I-Learn</a></li>
+        <li><a href="#">Scripture</a></li>
+        <li><a href="#">Final Project</a></li>
+    </ul>
+</nav>
 
+<main>
+    
     <section class="name-banner">
         <h1>Adafa Ralph</h1>
     </section>
@@ -29,12 +31,14 @@
     <section class="content-grid">
 
         <!-- LEFT COLUMN -->
-        <section class="about-me">
-            <h2>About Me</h2>
+        <div class="about-me">
+            <h2 class="about-top">About Me</h2>
 
             <div class="intro">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut harum in at nam non officiis minus.
+                    I am a software engineer at the Caribbean Digital Transformation Project (CARDTP), where I develop full-stack web applications that streamline workflows across government departments. I specialize in building clean, maintainable code with a focus on user-friendly interfaces and efficient backend APIs.
+
+Passionate about problem-solving and emerging technologies, I continuously refine my skills to deliver reliable, modern digital solutions that make an impact.
                 </p>
             </div>
 
@@ -46,20 +50,20 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam tempora voluptas nemo voluptatum.
                 </p>
             </div>
-        </section>
+        </div>
 
         <!-- RIGHT COLUMN -->
-        <aside>
-            <h1>Web Dev Resources</h1>
-            <ul>
-                <li>Dev.to Community</li>
-                <li>Smashing Magazine</li>
-                <li>CSS-Tricks</li>
-                <li>W3 Schools</li>
-                <li>Udemy</li>
-                <li>Lorem Picsum</li>
+        <div class="skills">
+            <h1 class="skills-top">Web Dev Resources</h1>
+            <ul class="skills-text">
+                <li><a href="https://dev.to" target="_blank" rel="noopener">Dev.to Community</a></li>
+                <li><a href="https://www.smashingmagazine.com/" target="_blank" rel="noopener">Smashing Magazine</a></li>
+                <li><a href="https://css-tricks.com/" target="_blank" rel="noopener">CSS-Tricks</a></li>
+                <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener">W3 Schools</a></li>
+                <li><a href="https://www.udemy.com/" target="_blank" rel="noopener">Udemy</a></li>
+                <li><a href="https://picsum.photos/" target="_blank" rel="noopener">Lorem Picsum</a></li>
             </ul>
-        </aside>
+        </div>
 
     </section>
 

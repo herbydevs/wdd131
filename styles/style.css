@@ -2,11 +2,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body {
     font-family: Arial, sans-serif;
     background-color: #e5e5e5;
+}
+
+.main-nav {
+    background-color: #2f2f2f;
+    margin-top: 0;          /* ensure no gap */
+    margin-bottom: 6rem;
 }
 
 /* ---------- HEADER ---------- */
@@ -16,6 +23,7 @@ body {
     text-align: center;
     padding: 20px;
     font-size: 1.2rem;
+    border-radius: 3px;
 }
 
 nav {
@@ -25,6 +33,7 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
+   
 }
 
 nav li {
@@ -48,7 +57,7 @@ main {
 .name-banner {
     text-align: center;
     font-size: 2rem;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 /* ---------- CONTENT GRID ---------- */
@@ -78,11 +87,25 @@ main {
     padding: 15px;
 }
 
+.about-me{
+    border-radius: 12px;
+    padding: 20px;
+    background-color: #ffffff70;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    margin:0;
+}
+
 /* About Me top section */
 .about-top {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 15px;
+    margin-bottom: 20px ;
+    margin-top: 0;
+    background-color: #1f4d6b;
+    margin: -20px -20px 20px -20px;  /* ⬅ key line */
+    padding: 15px 20px;
+    
 }
 
 /* Country section */
@@ -104,11 +127,36 @@ main {
 }
 
 /* ---------- ASIDE ---------- */
-aside ul {
+.skills {
     list-style: disc;
-    padding-left: 40px;
+    padding: 20px 20px 20px 20px;
+    border-radius: 12px;
+    background-color: #ffffff70;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
 }
 
+.skills-top{
+    display: grid;
+    margin-bottom: 20px ;
+    margin-top: 0;
+    background-color: #1f4d6b;
+    padding: 20px 20px 20px 20px;  /* ⬅ key line */
+    padding: 15px 20px;
+    border-radius: 12px 12px 0 0;
+}
+
+.skills ul{
+
+    list-style: none;
+    margin: 0;
+    padding: 20px 0 0 0;
+    text-align: center;
+}
+
+.skills li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
 /* ---------- FOOTER ---------- */
 footer {
     background-color: #1f4d6b;
