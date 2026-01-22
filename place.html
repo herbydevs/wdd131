@@ -5,11 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saint Vincent and the Grenadines</title>
     <meta name="description" content="A dynamic web page about Saint Vincent and the Grenadines for WDD 131.">
-    <!-- Google Fonts -->
+    <meta name="author" content="Your Name">
+    
+    <!-- Google Fonts Preconnect -->
     <link rel="preconnect" href="[https://fonts.googleapis.com](https://fonts.googleapis.com)">
     <link rel="preconnect" href="[https://fonts.gstatic.com](https://fonts.gstatic.com)" crossorigin>
     <link href="[https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;900&display=swap](https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;900&display=swap)" rel="stylesheet">
+    
+    <!-- Link to External CSS -->
     <link rel="stylesheet" href="styles/style.css">
+    
+    <!-- Link to External JavaScript -->
     <script src="scripts/script.js" defer></script>
 </head>
 <body>
@@ -19,11 +25,12 @@
     </header>
 
     <main>
+        <!-- Hero Image with WebP and Responsive SRCSET -->
         <div class="hero">
             <picture>
-                <source media="(min-width: 800px)" srcset="[https://images.unsplash.com/photo-1596423736858-690250761358?q=80&w=1200&auto=format&fit=crop](https://images.unsplash.com/photo-1596423736858-690250761358?q=80&w=1200&auto=format&fit=crop)">
-                <source media="(min-width: 400px)" srcset="[https://images.unsplash.com/photo-1596423736858-690250761358?q=80&w=800&auto=format&fit=crop](https://images.unsplash.com/photo-1596423736858-690250761358?q=80&w=800&auto=format&fit=crop)">
-                <img src="[https://images.unsplash.com/photo-1596423736858-690250761358?q=80&w=400&auto=format&fit=crop](https://images.unsplash.com/photo-1596423736858-690250761358?q=80&w=400&auto=format&fit=crop)" 
+                <source media="(min-width: 800px)" srcset="images/hero-large.webp">
+                <source media="(min-width: 400px)" srcset="images/hero-medium.webp">
+                <img src="images/hero-small.webp" 
                      alt="Beautiful coastal view of Saint Vincent"
                      loading="lazy"
                      width="400" height="225">
@@ -48,7 +55,15 @@
             <!-- Weather Section -->
             <section class="weather">
                 <h2>Weather</h2>
-                <div class="weather-card">                  
+                <div class="weather-card">
+                    <!-- Inline SVG Weather Icon -->
+                    <div class="weather-icon">
+                        <svg viewBox="0 0 24 24" width="64" height="64" fill="none" xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)">
+                            <circle cx="12" cy="12" r="5" stroke="#FCD116" stroke-width="2"/>
+                            <path d="M12 2V4M12 20V22M4 12H2M22 12H20M19.07 4.93L17.66 6.34M6.34 17.66L4.93 19.07M19.07 19.07L17.66 17.66M6.34 6.34L4.93 4.93" stroke="#FCD116" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    
                     <div class="weather-stat">
                         <span>Temperature:</span>
                         <span id="temp"></span>
