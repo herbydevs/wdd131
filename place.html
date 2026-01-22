@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saint Vincent and the Grenadines</title>
+    <meta name="description" content="A dynamic web page about Saint Vincent and the Grenadines for WDD 131.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="[https://fonts.googleapis.com](https://fonts.googleapis.com)">
+    <link rel="preconnect" href="[https://fonts.gstatic.com](https://fonts.gstatic.com)" crossorigin>
+    <link href="[https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;900&display=swap](https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;900&display=swap)" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Saint Vincent and the Grenadines</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 800px)" srcset="[https://images.unsplash.com/photo-1596423736858-690250761358?q=80&w=1200&auto=format&fit=crop](https://images.unsplash.com/photo-1596423736858-690250761358?q=80&w=1200&auto=format&fit=crop)">
+                <source media="(min-width: 400px)" srcset="[https://images.unsplash.com/photo-1596423736858-690250761358?q=80&w=800&auto=format&fit=crop](https://images.unsplash.com/photo-1596423736858-690250761358?q=80&w=800&auto=format&fit=crop)">
+                <img src="[https://images.unsplash.com/photo-1596423736858-690250761358?q=80&w=400&auto=format&fit=crop](https://images.unsplash.com/photo-1596423736858-690250761358?q=80&w=400&auto=format&fit=crop)" 
+                     alt="Beautiful coastal view of Saint Vincent"
+                     loading="lazy"
+                     width="400" height="225">
+            </picture>
+            <div class="hero-label">The Gems of the Antilles</div>
+        </div>
+
+        <div class="grid-container">
+            <!-- Data Section -->
+            <section class="data">
+                <h2>Quick Facts</h2>
+                <div class="data-list">
+                    <p>Area: <span>389 km²</span></p>
+                    <p>Population: <span>~110,000</span></p>
+                    <p>Capital: <span>Kingstown</span></p>
+                    <p>Language: <span>English</span></p>
+                    <p>Currency: <span>Eastern Caribbean Dollar (XCD)</span></p>
+                    <p>Calling Code: <span>+1-784</span></p>
+                </div>
+            </section>
+
+            <!-- Weather Section -->
+            <section class="weather">
+                <h2>Weather</h2>
+                <div class="weather-card">                  
+                    <div class="weather-stat">
+                        <span>Temperature:</span>
+                        <span id="temp"></span>
+                    </div>
+                    <div class="weather-stat">
+                        <span>Conditions:</span>
+                        <span>Sunny/Partly Cloudy</span>
+                    </div>
+                    <div class="weather-stat">
+                        <span>Wind:</span>
+                        <span id="wind"></span>
+                    </div>
+                    <div class="weather-stat">
+                        <span>Wind Chill:</span>
+                        <span id="chill"></span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> | Your Name | WDD 131</p>
+        <p class="highlight" id="lastModified"></p>
+    </footer>
+
+</body>
+</html>
