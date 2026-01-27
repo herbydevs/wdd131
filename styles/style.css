@@ -28,13 +28,11 @@ header {
     color: var(--text-light);
     text-align: center;
     padding: 1rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 header h1 {
     font-family: var(--header-font);
     font-size: 2rem;
-    margin: 0;
 }
 
 main {
@@ -100,14 +98,12 @@ section h2 {
     padding: 1.5rem;
     border-radius: 8px;
     text-align: center;
-    position: relative;
 }
 
 .weather-icon {
     width: 64px;
     height: 64px;
     margin: 0 auto 1rem auto;
-    display: block;
 }
 
 .weather-stat {
@@ -119,10 +115,6 @@ section h2 {
     padding-bottom: 0.25rem;
 }
 
-.weather-stat:last-child {
-    border-bottom: none;
-}
-
 footer {
     background-color: var(--primary-color);
     color: var(--text-light);
@@ -131,17 +123,10 @@ footer {
     margin-top: 2rem;
 }
 
-footer p {
-    font-size: 0.9rem;
-    margin: 0.25rem 0;
-}
-
 @media (min-width: 700px) {
     .grid-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 2.5rem;
-        align-items: start;
     }
 
     .weather h2::after {
@@ -153,9 +138,5 @@ footer p {
 
     .weather-icon {
         display: none;
-    }
-    
-    .weather-card {
-        text-align: left;
     }
 }
