@@ -1,8 +1,3 @@
-/* WDD 131: Website Planning Document Styles
-   This stylesheet applies the chosen color schema and typography 
-   to the planning document itself per rubric requirements.
-*/
-
 :root {
     --primary-color: #2D5A27; /* Forest Green */
     --secondary-color: #F4F1DE; /* Sand/Off-white */
