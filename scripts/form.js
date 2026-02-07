@@ -7,28 +7,24 @@ const products = [
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
-  // 1. Common Footer Data
   const yearSpan = document.getElementById("year");
   const lastModSpan = document.getElementById("lastModified");
 
   if (yearSpan) yearSpan.textContent = new Date().getFullYear();
   if (lastModSpan) lastModSpan.textContent = document.lastModified;
 
-  // 2. Form Page Logic (populate select)
   const productSelect = document.getElementById("productName");
   if (productSelect) {
     products.forEach((product) => {
       const option = document.createElement("option");
-      option.value = product.id; // Using ID for value as per instructions
-      option.textContent = product.name; // Using name for display
+      option.value = product.id;
+      option.textContent = product.name;
       productSelect.appendChild(option);
     });
   }
 
-  // 3. Review Confirmation Page Logic (localStorage counter)
   const reviewDisplay = document.getElementById("reviewCount");
   if (reviewDisplay) {
-    // Increment the counter only when we are on the review.html page
     let numReviews = Number(localStorage.getItem("numReviews-ls")) || 0;
     numReviews++;
     localStorage.setItem("numReviews-ls", numReviews);
