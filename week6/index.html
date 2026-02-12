@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Peak & Pine Adventure Guide</title>
+    <meta name="description" content="Peak & Pine Adventure Guide provides high-quality hiking trail information and seasonal preparation guides for National Parks in the Pacific Northwest.">
+    <meta name="author" content="Adafa Ralph">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Peak & Pine</div>
+            <button class="hamburger" id="menuButton" aria-label="Toggle Menu">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Olympic NP</a></li>
+                <li><a href="#">North Cascades</a></li>
+                <li><a href="#">Packing Guide</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Explore the Pacific Northwest</h1>
+                <p>Curated hiking guides, difficulty ratings, and seasonal preparation for your next adventure.</p>
+                <a href="#" class="cta-btn" id="actionButton">Find a Trail</a>
+            </div>
+            <div class="hero-image-placeholder">
+                <!-- Placeholder for Hero Image -->
+                <span>[ Featured Image: Olympic National Park ]</span>
+            </div>
+        </section>
+
+        <section class="intro">
+            <h2>Reliable Guides for Every Peak</h2>
+            <p id="dynamicText">We offer detailed trail maps and difficulty ratings to ensure every hiker is safe and prepared for the unique terrain of the PNW.</p>
+        </section>
+        
+        <div class="card-container">
+            <div class="card">
+                <h3>Olympic National Park</h3>
+                <p>Discover rain forest trails and coastal hikes suitable for beginners during the rainy season.</p>
+                <a href="#" class="card-link">View Trails →</a>
+            </div>
+            <div class="card">
+                <h3>The North Cascades</h3>
+                <p>Prepare for overnight backpacking trips with our expert gear lists and mountain safety guides.</p>
+                <a href="#" class="card-link">Explore Area →</a>
+            </div>
+            <div class="card">
+                <h3>Packing Generator</h3>
+                <p>Never leave the essentials behind. Generate a custom packing list based on the season and trail.</p>
+                <a href="#" class="card-link">Start List →</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="currentYear"></span> | Peak & Pine Adventure Guide | Adafa Ralph</p>
+            <p class="modified">Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
