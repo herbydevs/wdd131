@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trail Directory | Peak & Pine</title>
+    <meta name="description" content="Explore our curated list of hiking trails in the Pacific Northwest National Parks.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Peak & Pine</div>
+            <button class="hamburger" id="menuButton">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="directory.html" class="active">Trail Directory</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="directory">
+            <h1>Featured Trails</h1>
+            <p>Our database uses JavaScript objects to provide you with the latest trail conditions and info.</p>
+            <div id="trail-cards" class="card-container">
+                <!-- Injected via JavaScript (Criteria 12, 13, 14) -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="currentYear"></span> | Peak & Pine | Adafa Ralph</p>
+            <p class="modified">Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>

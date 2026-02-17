@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Your Trip | Peak & Pine Adventure Guide</title>
+    <meta name="description" content="Use our interactive trip planner to get custom gear recommendations for your PNW adventure.">
+    <meta name="author" content="Adafa Ralph">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Peak & Pine</div>
+            <button class="hamburger" id="menuButton" aria-label="Toggle Menu">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="directory.html">Trail Directory</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-v2" style="padding: 2rem; margin-bottom: 2rem;">
+            <div class="hero-content">
+                <span class="badge">Preparation is Key</span>
+                <h1>Plan Your Next Adventure</h1>
+                <p>Tell us a little about your goals, and our system will generate a customized preparation checklist (Rubric Criteria 8).</p>
+            </div>
+        </section>
+
+        <section class="form-container">
+            <form id="tripForm" action="#" method="get">
+                <div class="form-group">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="fname" required placeholder="Enter your name">
+                </div>
+
+                <div class="form-group">
+                    <label for="park">Target Destination</label>
+                    <select id="park" name="park" required>
+                        <option value="" disabled selected>Select a National Park</option>
+                        <option value="Olympic NP">Olympic National Park</option>
+                        <option value="North Cascades">North Cascades</option>
+                        <option value="Mount Rainier">Mount Rainier</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Skill Level</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="level" value="beginner" required> Novice</label>
+                        <label><input type="radio" name="level" value="intermediate"> Seasoned</label>
+                        <label><input type="radio" name="level" value="advanced"> Expert</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="comments">Specific Interests or Gear Questions:</label>
+                    <textarea id="comments" name="comments" rows="4" style="width: 100%; border-radius: 4px; padding: 10px; border: 1px solid #ccc; font-family: inherit;"></textarea>
+                </div>
+
+                <button type="submit" class="cta-btn">Generate My Plan</button>
+            </form>
+            <div id="formFeedback" class="hidden"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="currentYear"></span> | Peak & Pine Adventure Guide | Adafa Ralph</p>
+            <p><a href="references.html" style="color: white; text-decoration: underline;">Project References</a></p>
+            <p class="modified">Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+    <script src="./scripts/script.js"></script>
+</body>
+</html>

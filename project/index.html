@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home 
+         | Peak & Pine Adventure Guide</title>
+    <meta name="description" content="Explore version 2 of the Peak & Pine Adventure Guide. Your gateway to the best hiking trails in the Pacific Northwest.">
+    <meta name="author" content="Adafa Ralph">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Peak & Pine</div>
+            <button class="hamburger" id="menuButton" aria-label="Toggle Menu">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="directory.html">Trail Directory</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Enhanced Hero Section -->
+        <section class="hero hero-v2">
+            <div class="hero-content">
+                <span class="badge">Adventure Awaits</span>
+                <h1>Master the Mountain Trails</h1>
+                <p>From the misty shores of Olympic to the jagged peaks of the Cascades, we provide the intelligence you need for a safe, unforgettable journey.</p>
+                <div class="cta-group">
+                    <a href="directory.html" class="cta-btn">Explore Trails</a>
+                    <a href="contact.html" class="cta-btn secondary">Packing Lists</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://picsum.photos/id/1015/800/600" alt="Mountain landscape in the Pacific Northwest" width="800" height="600">
+            </div>
+        </section>
+
+        <!-- Stats Bar -->
+        <section id="visitor-info" class="stats-bar">
+            <p id="visitCounter">Synchronizing your adventure stats...</p>
+        </section>
+
+        <!-- Seasonal Highlights Section -->
+        <section class="seasonal-highlights">
+            <h2>Spring Seasonal Highlights</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Wildflower Blooms</h3>
+                    <p>Spring in the PNW means vibrant meadows. Check our latest reports on Mount Rainier's lower elevation blooms.</p>
+                </div>
+                <div class="card">
+                    <h3>Rainforest Trekking</h3>
+                    <p>Experience the Hoh Rainforest at its lushest. The spring rains bring out the deepest greens of the Olympic Peninsula.</p>
+                </div>
+                <div class="card">
+                    <h3>Safety First</h3>
+                    <p>Snow persists at high elevations through June. Be sure to check our updated gear requirements for spring summits.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature Spotlight -->
+        <section class="feature-spotlight">
+            <div class="spotlight-text">
+                <h2>Plan with Precision</h2>
+                <p>Our custom packing generator considers trail difficulty, elevation gain, and real-time weather forecasts to ensure you're never under-prepared.</p>
+                <ul class="feature-list">
+                    <li>✓ Real-time Weather Integration</li>
+                    <li>✓ Difficulty Scaled Packing Suggestions</li>
+                    <li>✓ Local Ranger Station Contacts</li>
+                </ul>
+                <a href="contact.html" class="cta-btn">Start Planning</a>
+            </div>
+        </section>
+
+        <!-- Lazy Loaded Image Gallery (Criteria 7) -->
+        <section class="bottom-gallery">
+            <h2>The PNW Through Your Lens</h2>
+            <div class="image-grid">
+                <img src="https://picsum.photos/id/1016/400/300" alt="Foggy forest" loading="lazy">
+                <img src="https://picsum.photos/id/1018/400/300" alt="Mirror lake reflection" loading="lazy">
+                <img src="https://picsum.photos/id/1019/400/300" alt="Wilderness valley" loading="lazy">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="currentYear"></span> | Peak & Pine Adventure Guide | Adafa Ralph</p>
+            <p><a href="references.html" style="color: white; text-decoration: underline;">Project References</a></p>
+            <p class="modified">Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
